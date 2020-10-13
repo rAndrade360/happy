@@ -1,0 +1,113 @@
+.landing-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.container {
+  display: grid;
+  background: url('../../assets//img/Ilustra02.svg') no-repeat 70% 60%;
+  background-size: 40%;
+  margin: auto;
+  max-width: 900px;
+  height: 90vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  'logo . city'
+  'title . .'
+  'subtitle . button';
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.city {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: city;
+  flex-direction: column;
+  color: #fff;
+}
+
+.city p {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.city p strong {
+  font-weight: 700;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: title;
+  color: #fff;
+}
+
+.title h1 {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 50px;
+  max-width: 200px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: subtitle;
+  color: #fff;
+  font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+}
+
+.subtitle p {
+  max-width: 225px;
+}
+
+.next-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: button;
+}
+
+.next-button button {
+  width: 45px;
+  height: 45px;
+  background-color:#FFD666;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #8D734B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.next-button button:hover {
+  background-color:#96FEFF;
+  color: #15C3D6;
+}
